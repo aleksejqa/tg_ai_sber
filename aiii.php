@@ -19,7 +19,7 @@ $chatId = $message["chat"]["id"];
 if ($text=="/start"){ sms_tg($chatId,"Вышлите начало текста, а искуственный интелект продолжит его.");
 exit;}
 
-$url = "https://api.sbercloud.ru/v2/aicloud/gpt3";
+$url = "https://api..ru/v2/aicloud/gpt3";
 $ch = curl_init();
 curl_setopt_array($ch, array(
     CURLOPT_URL => $url,
@@ -37,16 +37,16 @@ curl_close($ch);
 
 
 $headers = [
-'Host: api.sbercloud.ru',
+'Host: api..ru',
 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
 'DNT: 1',
 'Content-Type: application/json;charset=utf-8',
 'Accept: */*',
-'Origin: https://sbercloud.ru',
+'Origin: https://.ru',
 'Sec-Fetch-Site: same-site',
 'Sec-Fetch-Mode: cors',
 'Sec-Fetch-Dest: empty',
-'Referer: https://sbercloud.ru/',
+'Referer: https://.ru/',
 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,cy;q=0.6,pt;q=0.5',
 ];
 
